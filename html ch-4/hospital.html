@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Registration Form</title>
+</head>
+<body>
+    <h1>Hospital Registration Form</h1>
+    <form action="submit_registration.php" method="post">
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required><br><br>
+
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="insurance_number">Insurance Number:</label>
+        <input type="text" id="insurance_number" name="insurance_number"><br><br>
+
+        <label for="emergency_contact">Emergency Contact:</label>
+        <input type="text" id="emergency_contact" name="emergency_contact" required><br><br>
+
+        <label for="emergency_phone">Emergency Phone:</label>
+        <input type="tel" id="emergency_phone" name="emergency_phone" required><br><br>
+
+        <label for="admission_date">Admission Date:</label>
+        <input type="date" id="admission_date" name="admission_date" required><br><br>
+
+        <label for="reason_for_admission">Reason for Admission:</label>
+        <textarea id="reason_for_admission" name="reason_for_admission" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
